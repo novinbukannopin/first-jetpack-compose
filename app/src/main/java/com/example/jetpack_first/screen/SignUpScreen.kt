@@ -14,13 +14,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.jetpack_first.R
 import com.example.jetpack_first.component.HeadingTextComponent
 import com.example.jetpack_first.component.MyTextField
 import com.example.jetpack_first.component.NormalTextComponent
 
 @Composable
-fun SignUpScreen() {
+fun SignUpScreen(navController: NavController) {
     Surface(
         color = Color.White, modifier = Modifier
             .fillMaxSize()
@@ -50,5 +51,5 @@ fun SignUpScreen() {
 @Preview
 @Composable
 fun DefaultPreviewSignUpScreen() {
-    SignUpScreen()
+//    SignUpScreen()
 }
